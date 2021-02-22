@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>server putracell</title>
+    <style type="text/css" media="all">
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        background:#244;
+        color: orange;
+        text-align: center;
+        font-family: Sans-Serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Hi there.
+    </h1>
+    <p>server is active.</p>
+    <form method="post" action="/saveuser.php" accept-charset="utf-8">
+      <input type="hidden" name="userid">
+      <input type="hidden" name="strapi">
+    </form>
+    <form action="/createfile.php" method="post" accept-charset="utf-8">
+      <input type="hidden" name="filename">
+      <input type="hidden" name="strval">
+    </form>
+  </body>
+</html>
